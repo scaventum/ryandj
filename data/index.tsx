@@ -1,6 +1,7 @@
 const data = {
   profile: {
-    name: "Ryan Djoenaidi",
+    preferredName: "Ryan DJ",
+    fullName: "Ryan Djoenaidi",
     role: "Senior developer",
     introduction:
       "NZ-based senior developer proficient in PHP (Laravel) and JavaScript (React), experienced in AWS and Azure infrastructure management. Seeking opportunities to advance leadership skills and stay updated on evolving development technologies.",
