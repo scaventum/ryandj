@@ -6,7 +6,7 @@ const data = {
         title: "Ryan Djoenaidi",
         subtitle: "Senior developer",
         introduction:
-          "NZ-based senior developer proficient in PHP (Laravel) and JavaScript (React), experienced in AWS and Azure infrastructure management. Seeking opportunities to advance leadership skills and stay updated on evolving development technologies.",
+          "Wellington, NZ based senior developer proficient in PHP (Laravel) and JavaScript (React), experienced in AWS and Azure infrastructure management. Seeking opportunities to advance leadership skills and stay updated on evolving development technologies.",
         hightlightedItems: [
           {
             icon: {
@@ -63,7 +63,7 @@ const data = {
             name: "server",
           },
           category: "back-end",
-          label: "Back end",
+          label: "Back-end",
           items: [
             {
               icon: {
@@ -116,7 +116,7 @@ const data = {
             name: "window-maximize",
           },
           category: "front-end",
-          label: "Front end",
+          label: "Front-end",
           items: [
             {
               icon: {
