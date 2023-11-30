@@ -1,16 +1,15 @@
 import type { Metadata } from "next";
-import { Inter } from "next/font/google";
+import { Plus_Jakarta_Sans } from "next/font/google";
 
-import data from "@data";
+import meta from "@data/meta";
+
+import "@fortawesome/fontawesome-svg-core/styles.css";
 
 import "./globals.css";
 
-const inter = Inter({ subsets: ["latin"] });
+const plusJakartaSans = Plus_Jakarta_Sans({ subsets: ["latin"] });
 
-export const metadata: Metadata = {
-  title: `${data.profile.preferredName} - ${data.profile.role}`,
-  description: data.profile.introduction,
-};
+export const metadata: Metadata = meta;
 
 export default function RootLayout({
   children,
@@ -19,7 +18,7 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-      <body className={inter.className}>{children}</body>
+      <body className={plusJakartaSans.className}>{children}</body>
     </html>
   );
 }
