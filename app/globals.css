@@ -3,15 +3,18 @@
 @tailwind utilities;
 
 :root {
-  --colour-foreground: #333333;
-  --colour-background: #ffffff;
-  --colour-accent: #00ffff;
+  --colour-foreground: theme("colors.stone.800");
+  --colour-background: theme("colors.stone.50");
+  --colour-background-secondary: theme("colors.stone.100");
+  --colour-accent: theme("colors.teal.600");
 }
 
 @media (prefers-color-scheme: dark) {
   :root {
-    --colour-foreground: #ffffff;
-    --colour-background: #333333;
+    --colour-foreground: theme("colors.stone.50");
+    --colour-background: theme("colors.stone.800");
+    --colour-background-secondary: theme("colors.stone.700");
+    --colour-accent: theme("colors.teal.400");
   }
 }
 

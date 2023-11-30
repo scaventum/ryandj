@@ -5,7 +5,7 @@ const url = `https://${
 }`;
 const title = "Ryan DJ - Senior developer";
 const description =
-  "Wellington, NZ based senior developer proficient in PHP (Laravel) and JavaScript (React), experienced in AWS and Azure infrastructure management. Seeking opportunities to advance leadership skills and stay updated on evolving development technologies.";
+  "Wellington-NZ based, proficient in PHP (Laravel) and JavaScript (React), experienced in AWS and Azure infrastructure management. Seeking opportunities to advance leadership skills and stay updated on evolving development technologies.";
 const imageUrl = `${url}/assets/favicons/meta.jpg`;
 const meta = {
   title,

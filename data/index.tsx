@@ -6,12 +6,12 @@ const data = {
         title: "Ryan Djoenaidi",
         subtitle: "Senior developer",
         introduction:
-          "Wellington, NZ based senior developer proficient in PHP (Laravel) and JavaScript (React), experienced in AWS and Azure infrastructure management. Seeking opportunities to advance leadership skills and stay updated on evolving development technologies.",
+          "Wellington-NZ based, proficient in PHP (Laravel) and JavaScript (React), experienced in AWS and Azure infrastructure management. Seeking opportunities to advance leadership skills and stay updated on evolving development technologies.",
         hightlightedItems: [
           {
             icon: {
               name: "laravel",
-              style: "brands",
+              style: "fab",
             },
             label: "Laravel",
             rating: 9,
@@ -19,7 +19,7 @@ const data = {
           {
             icon: {
               name: "php",
-              style: "brands",
+              style: "fab",
             },
             label: "PHP",
             rating: 8,
@@ -27,7 +27,7 @@ const data = {
           {
             icon: {
               name: "react",
-              style: "brands",
+              style: "fab",
             },
             label: "React",
             rating: 7,
@@ -35,7 +35,7 @@ const data = {
           {
             icon: {
               name: "js",
-              style: "brands",
+              style: "fab",
             },
             label: "JS",
             rating: 7,
@@ -43,7 +43,7 @@ const data = {
           {
             icon: {
               name: "aws",
-              style: "brands",
+              style: "fab",
             },
             label: "AWS",
             rating: 7,
@@ -68,7 +68,7 @@ const data = {
             {
               icon: {
                 name: "laravel",
-                style: "brands",
+                style: "fab",
               },
               label: "Laravel",
               rating: 9,
@@ -76,7 +76,7 @@ const data = {
             {
               icon: {
                 name: "php",
-                style: "brands",
+                style: "fab",
               },
               label: "PHP",
               rating: 8,
@@ -121,7 +121,7 @@ const data = {
             {
               icon: {
                 name: "react",
-                style: "brands",
+                style: "fab",
               },
               label: "React",
               rating: 7,
@@ -129,7 +129,7 @@ const data = {
             {
               icon: {
                 name: "js",
-                style: "brands",
+                style: "fab",
               },
               label: "JS",
               rating: 7,
@@ -146,7 +146,7 @@ const data = {
             {
               icon: {
                 name: "aws",
-                style: "brands",
+                style: "fab",
               },
               label: "AWS",
               rating: 7,
@@ -154,7 +154,7 @@ const data = {
             {
               icon: {
                 name: "microsoft",
-                style: "brands",
+                style: "fab",
               },
               label: "Azure",
               rating: 6,
@@ -162,7 +162,7 @@ const data = {
             {
               icon: {
                 name: "docker",
-                style: "brands",
+                style: "fab",
               },
               label: "Docker",
               rating: 7,
@@ -179,7 +179,7 @@ const data = {
             {
               icon: {
                 name: "ubuntu",
-                style: "brands",
+                style: "fab",
               },
               label: "Linux",
               rating: 6,
@@ -196,7 +196,7 @@ const data = {
             {
               icon: {
                 name: "jira",
-                style: "brands",
+                style: "fab",
               },
               label: "Jira",
               rating: 8,
@@ -204,7 +204,7 @@ const data = {
             {
               icon: {
                 name: "confluence",
-                style: "brands",
+                style: "fab",
               },
               label: "Confluence",
               rating: 8,
@@ -221,7 +221,7 @@ const data = {
             {
               icon: {
                 name: "git",
-                style: "brands",
+                style: "fab",
               },
               label: "git",
               rating: 8,
@@ -229,7 +229,7 @@ const data = {
             {
               icon: {
                 name: "bitbucket",
-                style: "brands",
+                style: "fab",
               },
               label: "Bitbucket",
               rating: 7,
@@ -237,7 +237,7 @@ const data = {
             {
               icon: {
                 name: "github",
-                style: "brands",
+                style: "fab",
               },
               label: "GitHub",
               rating: 6,
@@ -268,7 +268,7 @@ const data = {
             {
               icon: {
                 name: "vuejs",
-                style: "brands",
+                style: "fab",
               },
               label: "Vue",
               rating: 5,
@@ -276,7 +276,7 @@ const data = {
             {
               icon: {
                 name: "gitlab",
-                style: "brands",
+                style: "fab",
               },
               label: "GitLab",
               rating: 5,
@@ -405,7 +405,7 @@ const data = {
         {
           icon: {
             name: "aws",
-            style: "brands",
+            style: "fab",
           },
           title: "AWS Certified Solutions Architect - Associate",
           subtitle: "September 2020 by AWS",
@@ -419,7 +419,7 @@ const data = {
         {
           icon: {
             name: "linkedin",
-            style: "brands",
+            style: "fab",
           },
           title: "LinkedIn",
           link: "https://www.linkedin.com/in/ryan-djoenaidi-383b96166/",
@@ -427,7 +427,7 @@ const data = {
         {
           icon: {
             name: "gmail",
-            style: "brands",
+            style: "fab",
           },
           title: "Gmail",
           link: "mailto:ryan.djoenaidi@gmail.com",
@@ -435,7 +435,7 @@ const data = {
         {
           icon: {
             name: "whatsapp",
-            style: "brands",
+            style: "fab",
           },
           title: "WhatsApp",
           link: "https://wa.me/622040995746",
@@ -443,7 +443,7 @@ const data = {
         {
           icon: {
             name: "github",
-            style: "brands",
+            style: "fab",
           },
           title: "GitHub",
           link: "https://github.com/scaventum",
