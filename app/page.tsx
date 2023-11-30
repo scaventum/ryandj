@@ -1,7 +1,10 @@
+import { Russo_One } from "next/font/google";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faWarning } from "@fortawesome/free-solid-svg-icons";
 
 import data from "@data";
-import { faWarning } from "@fortawesome/free-solid-svg-icons";
+
+const russoOne = Russo_One({ subsets: ["latin"], weight: "400" });
 
 export default function Home() {
   return (
@@ -23,7 +26,9 @@ export default function Home() {
         >
           <FontAwesomeIcon icon={faWarning} size="2xl" />
           <div>
-            <h3 className="font-bold">Sorry for the inconvenience!</h3>
+            <h3 className={[russoOne.className, "font-bold"].join(" ")}>
+              Sorry for the inconvenience!
+            </h3>
             <span>
               Design is currently underway. Here&apos;s the raw data in the
               meantime.

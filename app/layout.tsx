@@ -1,5 +1,5 @@
 import type { Metadata } from "next";
-import { Plus_Jakarta_Sans } from "next/font/google";
+import { Exo_2 } from "next/font/google";
 
 import meta from "@data/meta";
 
@@ -7,7 +7,7 @@ import "@fortawesome/fontawesome-svg-core/styles.css";
 
 import "./globals.css";
 
-const plusJakartaSans = Plus_Jakarta_Sans({ subsets: ["latin"] });
+const exo2 = Exo_2({ subsets: ["latin"] });
 
 export const metadata: Metadata = meta;
 
@@ -18,7 +18,7 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-      <body className={plusJakartaSans.className}>{children}</body>
+      <body className={exo2.className}>{children}</body>
     </html>
   );
 }
