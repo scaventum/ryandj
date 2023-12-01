@@ -10,7 +10,7 @@ import { fab } from "@fortawesome/free-brands-svg-icons";
 
 library.add(fas, fab);
 
-import data from "@data";
+import data from "@data/index";
 import Icon from "@components/icon";
 
 const russoOne = Russo_One({ subsets: ["latin"], weight: "400" });
