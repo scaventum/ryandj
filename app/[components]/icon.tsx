@@ -12,14 +12,13 @@ import {
 library.add(fas, fab);
 
 // proptypes
-type Props = {
+export type IconProps = {
   name: string;
   style?: string;
   size?: string;
 };
 
-// export
-export default function Icon({ name, style = "fas", size = "md" }: Props) {
+export default function Icon({ name, style = "fas", size = "md" }: IconProps) {
   // helpers
   const iconStyle: IconPrefix = (style ?? "fas") as IconPrefix;
   const iconName: IconName = name as IconName;

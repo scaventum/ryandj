@@ -2,7 +2,7 @@ const data = {
   sections: [
     {
       type: "hero",
-      profile: {
+      hero: {
         title: "Ryan Djoenaidi",
         subtitle: "Senior developer",
         introduction:
