@@ -21,11 +21,12 @@ export default function Home() {
     <main className={["md:grid", "md:grid-cols-2"].join(" ")}>
       <section
         className={[
-          "h-screen",
+          "min-h-screen",
           "p-8",
           "sm:p-16",
           "flex",
-          "items-center",
+          "items-start",
+          "sm:items-center",
           "justify-center",
         ].join(" ")}
       >
@@ -52,14 +53,7 @@ export default function Home() {
             >
               {profileSection?.profile?.subtitle.toUpperCase()}
             </h2>
-            <p
-              className={[
-                "w-full",
-                "max-w-screen-sm",
-                "text-justify",
-                "text-md",
-              ].join(" ")}
-            >
+            <p className={["w-full", "text-justify", "text-md"].join(" ")}>
               {profileSection?.profile?.introduction}
             </p>
           </div>
