@@ -26,8 +26,7 @@ export default function Home() {
           "p-8",
           "sm:p-16",
           "flex",
-          "items-start",
-          "sm:items-center",
+          "items-center",
           "justify-center",
         ].join(" ")}
       >
@@ -147,9 +146,7 @@ export default function Home() {
               "h-full",
               "w-full",
               "rounded",
-              "border-2",
-              "border-current",
-              "border-solid",
+              "bg-background",
               "p-4",
               "whitespace-pre-wrap",
               "break-all",
