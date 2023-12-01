@@ -57,7 +57,7 @@ const data = {
         title: "Skills",
         subtitle: "And expertise",
       },
-      items: [
+      categorisedItems: [
         {
           icon: {
             name: "server",
@@ -90,20 +90,6 @@ const data = {
             },
             {
               icon: {
-                name: "cube",
-              },
-              label: "Composer",
-              rating: 7,
-            },
-            {
-              icon: {
-                name: "terminal",
-              },
-              label: "Artisan",
-              rating: 8,
-            },
-            {
-              icon: {
                 name: "server",
               },
               label: "NGINX",
@@ -132,6 +118,22 @@ const data = {
                 style: "fab",
               },
               label: "JS",
+              rating: 7,
+            },
+            {
+              icon: {
+                name: "sass",
+                style: "fab",
+              },
+              label: "Scss",
+              rating: 7,
+            },
+            {
+              icon: {
+                name: "html5",
+                style: "fab",
+              },
+              label: "HTML",
               rating: 7,
             },
           ],
@@ -167,6 +169,13 @@ const data = {
               label: "Docker",
               rating: 7,
             },
+            {
+              icon: {
+                name: "cloud-arrow-up",
+              },
+              label: "Kubernetes",
+              rating: 7,
+            },
           ],
         },
         {
@@ -174,7 +183,7 @@ const data = {
             name: "gears",
           },
           category: "operation-system",
-          label: "Operation Systems",
+          label: "OS",
           items: [
             {
               icon: {
@@ -182,6 +191,29 @@ const data = {
                 style: "fab",
               },
               label: "Linux",
+              rating: 6,
+            },
+            {
+              icon: {
+                name: "apple",
+                style: "fab",
+              },
+              label: "MacOS",
+              rating: 6,
+            },
+            {
+              icon: {
+                name: "windows",
+                style: "fab",
+              },
+              label: "Windows",
+              rating: 6,
+            },
+            {
+              icon: {
+                name: "terminal",
+              },
+              label: "Shell scripting",
               rating: 6,
             },
           ],
@@ -207,6 +239,20 @@ const data = {
                 style: "fab",
               },
               label: "Confluence",
+              rating: 8,
+            },
+            {
+              icon: {
+                name: "diagram-project",
+              },
+              label: "Lucidchart",
+              rating: 8,
+            },
+            {
+              icon: {
+                name: "note-sticky",
+              },
+              label: "Miro",
               rating: 8,
             },
           ],
@@ -242,6 +288,14 @@ const data = {
               label: "GitHub",
               rating: 6,
             },
+            {
+              icon: {
+                name: "gitlab",
+                style: "fab",
+              },
+              label: "GitLab",
+              rating: 6,
+            },
           ],
         },
         {
@@ -260,13 +314,6 @@ const data = {
             },
             {
               icon: {
-                name: "code",
-              },
-              label: "CodeIgniter",
-              rating: 5,
-            },
-            {
-              icon: {
                 name: "vuejs",
                 style: "fab",
               },
@@ -275,11 +322,19 @@ const data = {
             },
             {
               icon: {
-                name: "gitlab",
+                name: "python",
                 style: "fab",
               },
-              label: "GitLab",
+              label: "Python",
               rating: 5,
+            },
+            {
+              icon: {
+                name: "figma",
+                style: "fab",
+              },
+              label: "Figma",
+              rating: 7,
             },
           ],
         },

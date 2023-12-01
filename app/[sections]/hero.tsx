@@ -1,6 +1,6 @@
 import { Russo_One } from "next/font/google";
-import type { IconProps } from "@components/icon";
 
+import type { IconProps } from "@components/icon";
 import Icon from "@components/icon";
 
 // fonts
@@ -20,7 +20,7 @@ export type HeroProps = {
   };
 };
 
-export default function Hero({ hero }: HeroProps) {
+const Hero = ({ hero }: HeroProps) => {
   // destructors
   const { title, subtitle, introduction, hightlightedItems } = hero;
 
@@ -118,4 +118,6 @@ export default function Hero({ hero }: HeroProps) {
       </div>
     </section>
   );
-}
+};
+
+export default Hero;
