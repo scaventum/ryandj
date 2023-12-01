@@ -11,6 +11,7 @@ import { fab } from "@fortawesome/free-brands-svg-icons";
 library.add(fas, fab);
 
 import data from "@data";
+import Icon from "@components/icon";
 
 const russoOne = Russo_One({ subsets: ["latin"], weight: "400" });
 
@@ -70,9 +71,6 @@ export default function Home() {
             {profileSection?.profile?.hightlightedItems?.map(
               ({ icon, label, rating }, index) => {
                 const ratingWidth = `${rating * 10}%`;
-                const iconStyle: IconPrefix = (icon.style ??
-                  "fas") as IconPrefix;
-                const iconName: IconName = icon.name as IconName;
 
                 return (
                   <div
@@ -80,18 +78,13 @@ export default function Home() {
                     className={["flex", "gap-2", "flex-col"].join(" ")}
                   >
                     <div
-                      className={[
-                        "flex",
-                        "items-center",
-                        "justify-between",
-                      ].join(" ")}
+                      className={["flex", "items-end", "justify-between"].join(
+                        " "
+                      )}
                     >
                       <span className={["font-bold"].join(" ")}>{label}</span>
                       <div className={["text-right"].join(" ")}>
-                        <FontAwesomeIcon
-                          icon={[iconStyle, iconName]}
-                          size="xl"
-                        />
+                        <Icon {...icon} size="lg" />
                       </div>
                     </div>
                     <div
@@ -137,7 +130,7 @@ export default function Home() {
             "text-[#333333]",
           ].join(" ")}
         >
-          <FontAwesomeIcon icon={["fas", "warning"]} size="2xl" />
+          <Icon style="fas" name="warning" size="2xl" />
           <div>
             <h3 className={[russoOne.className, "font-bold"].join(" ")}>
               Sorry for the inconvenience!
