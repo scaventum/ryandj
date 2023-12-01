@@ -26,6 +26,7 @@ export default function Home() {
             return (
               <CategorisedItems
                 key={index}
+                icon={section.icon}
                 titling={section.titling}
                 items={section.categorisedItems}
               />

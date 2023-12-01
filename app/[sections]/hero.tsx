@@ -85,18 +85,14 @@ const Hero = ({ hero }: HeroProps) => {
                 key={index}
                 className={["flex", "gap-2", "flex-col"].join(" ")}
               >
-                {icon && (
-                  <div
-                    className={["flex", "items-end", "justify-between"].join(
-                      " "
-                    )}
-                  >
-                    <span className={["font-bold"].join(" ")}>{label}</span>
-                    <div className={["text-right"].join(" ")}>
-                      <Icon {...icon} size="lg" />
-                    </div>
+                <div
+                  className={["flex", "items-end", "justify-between"].join(" ")}
+                >
+                  <span className={["font-bold"].join(" ")}>{label}</span>
+                  <div className={["text-right"].join(" ")}>
+                    {icon && <Icon {...icon} size="lg" />}
                   </div>
-                )}
+                </div>
                 {rating && (
                   <div
                     className={[

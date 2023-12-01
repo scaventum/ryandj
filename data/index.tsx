@@ -53,6 +53,9 @@ const data = {
     },
     {
       type: "categorised-items",
+      icon: {
+        name: "layer-group",
+      },
       titling: {
         title: "Skills",
         subtitle: "And expertise",
@@ -143,7 +146,7 @@ const data = {
             name: "cloud",
           },
           category: "infrastructure",
-          label: "Infrastructures",
+          label: "Infras",
           items: [
             {
               icon: {
