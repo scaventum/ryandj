@@ -444,7 +444,13 @@ const data = {
     },
     {
       type: "hyperlinks",
-      items: [
+      icon: {
+        name: "certificate",
+      },
+      titling: {
+        title: "Certifications",
+      },
+      hyperlinks: [
         {
           icon: {
             name: "certificate",
@@ -467,7 +473,13 @@ const data = {
     },
     {
       type: "hyperlinks",
-      items: [
+      icon: {
+        name: "hashtag",
+      },
+      titling: {
+        title: "Contacts",
+      },
+      hyperlinks: [
         {
           icon: {
             name: "linkedin",
@@ -478,7 +490,7 @@ const data = {
         },
         {
           icon: {
-            name: "gmail",
+            name: "google",
             style: "fab",
           },
           title: "Gmail",

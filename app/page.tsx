@@ -3,6 +3,7 @@ import SECTION_TYPES from "@constants/sections";
 
 import CategorisedItems from "@sections/categorisedItems";
 import Hero from "@sections/hero";
+import Hyperlinks from "@sections/hyperlinks";
 import Timeline from "@sections/timeline";
 
 export default function Home() {
@@ -39,6 +40,15 @@ export default function Home() {
                 icon={section.icon}
                 titling={section.titling}
                 items={section.timelineItems}
+              />
+            );
+          } else if (section.type === SECTION_TYPES.HYPERLINKS) {
+            return (
+              <Hyperlinks
+                key={index}
+                icon={section.icon}
+                titling={section.titling}
+                hyperlinks={section.hyperlinks}
               />
             );
           }
