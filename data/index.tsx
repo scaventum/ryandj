@@ -351,7 +351,7 @@ const data = {
       titling: {
         title: "Experiences",
       },
-      items: [
+      timelineItems: [
         {
           organisationName: "AKQA",
           as: "Senior developer",
@@ -421,7 +421,7 @@ const data = {
       titling: {
         title: "Educations",
       },
-      items: [
+      timelineItems: [
         {
           organisationName: "WelTec",
           as: "Bachelor of IT",

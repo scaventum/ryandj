@@ -38,7 +38,7 @@ export default function Home() {
                 key={index}
                 icon={section.icon}
                 titling={section.titling}
-                items={section.items}
+                items={section.timelineItems}
               />
             );
           }
