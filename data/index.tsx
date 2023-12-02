@@ -345,9 +345,11 @@ const data = {
     },
     {
       type: "timeline",
+      icon: {
+        name: "building",
+      },
       titling: {
         title: "Experiences",
-        subtitle: "And expertise",
       },
       items: [
         {
@@ -409,24 +411,16 @@ const data = {
             "Maintaining and servicing applications and infrastructure.",
           ],
         },
-        {
-          organisationName: "Pro-Int Dinamika",
-          as: "Graduate developer",
-          location: "Jakarta - Indonesia",
-          period: {
-            from: "Aug 2013",
-            to: "Sep 2014",
-          },
-          jobDescription: [
-            "Working closely with senior developers and system analysts to deliver features and fixes.",
-            "Organizing and delegating tasks within daily cycles to meet set targets.",
-            "Maintaining and servicing applications.",
-          ],
-        },
       ],
     },
     {
       type: "timeline",
+      icon: {
+        name: "building-columns",
+      },
+      titling: {
+        title: "Educations",
+      },
       items: [
         {
           organisationName: "WelTec",

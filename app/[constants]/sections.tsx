@@ -1,6 +1,7 @@
-const SECTIONS = {
-  HERO: "hero",
+const SECTION_TYPES = {
   CATEGORISED_ITEMS: "categorised-items",
+  HERO: "hero",
+  TIMELINE: "timeline",
 };
 
-export default SECTIONS;
+export default SECTION_TYPES;

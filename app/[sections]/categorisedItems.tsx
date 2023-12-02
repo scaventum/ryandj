@@ -51,20 +51,22 @@ const CategorisedItems = ({ icon, titling, items }: CategorisedItemsProps) => {
       >
         <div className={["flex", "flex-col", "gap-2", "items-start"].join(" ")}>
           {icon && <Icon {...icon} size="2xl" />}
-          {titling?.title && (
-            <h3 className={[russoOne.className, "text-3xl"].join(" ")}>
-              {titling.title.toUpperCase()}
-            </h3>
-          )}
-          {titling?.subtitle && (
-            <h4
-              className={[russoOne.className, "text-xl", "text-accent"].join(
-                " "
-              )}
-            >
-              {titling.subtitle.toUpperCase()}
-            </h4>
-          )}
+          <div>
+            {titling?.title && (
+              <h3 className={[russoOne.className, "text-3xl"].join(" ")}>
+                {titling.title.toUpperCase()}
+              </h3>
+            )}
+            {titling?.subtitle && (
+              <h4
+                className={[russoOne.className, "text-xl", "text-accent"].join(
+                  " "
+                )}
+              >
+                {titling.subtitle.toUpperCase()}
+              </h4>
+            )}
+          </div>
         </div>
         {items?.map(({ icon, label, items }, index) => (
           <div key={index} className={["flex", "flex-col", "gap-1"].join(" ")}>
