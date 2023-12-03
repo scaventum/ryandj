@@ -517,7 +517,14 @@ const data = {
     },
     {
       type: "list",
-      items: [
+      icon: {
+        name: "umbrella-beach",
+      },
+      titling: {
+        title: "Interest",
+        subtitle: "And hobbies",
+      },
+      listItems: [
         {
           icon: {
             name: "code",
@@ -546,7 +553,13 @@ const data = {
     },
     {
       type: "list",
-      items: [
+      icon: {
+        name: "users",
+      },
+      titling: {
+        title: "Referees",
+      },
+      listItems: [
         {
           icon: {
             name: "user-check",

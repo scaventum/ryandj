@@ -7,38 +7,21 @@ import Icon from "@components/icon";
 const russoOne = Russo_One({ subsets: ["latin"], weight: "400" });
 
 // proptypes
-export type HyperlinksProps = {
+export type ListProps = {
   size?: string;
   icon?: IconProps;
   titling?: {
     title?: string;
     subtitle?: string;
   };
-  hyperlinks?: Array<{
+  listItems?: Array<{
     icon?: IconProps;
     title?: string;
-    subtitle?: string;
-    link?: string;
   }>;
 };
 
 // component
-const Hyperlinks = ({
-  size = "md",
-  icon,
-  titling,
-  hyperlinks,
-}: HyperlinksProps) => {
-  let gridCols = ["sm:grid-cols-2", "md:grid-cols-1", "lg:grid-cols-2"];
-  if (size === "sm") {
-    gridCols = [
-      "sm:grid-cols-3",
-      "md:grid-cols-1",
-      "lg:grid-cols-2",
-      "xl:grid-cols-3",
-    ];
-  }
-
+const List = ({ size = "md", icon, titling, listItems }: ListProps) => {
   return (
     <section
       className={[
@@ -69,35 +52,29 @@ const Hyperlinks = ({
           )}
         </div>
       </div>
-      <div className={["grid", ...gridCols, "gap-4", "sm:gap-8"].join(" ")}>
-        {hyperlinks?.map(({ icon, title, subtitle, link }, index) => (
-          <a href={link} key={index} target="__blank">
-            <div
-              className={[
-                "bg-background",
-                "hover:bg-accent",
-                "hover:text-background",
-                "rounded",
-                "p-4",
-                "flex",
-                "gap-4",
-                "overflow-hidden",
-                "h-full",
-              ].join(" ")}
-            >
+      <div className={["grid", "gap-4", "sm:gap-8"].join(" ")}>
+        {listItems?.map(({ icon, title }, index) => (
+          <div
+            key={index}
+            className={[
+              "flex",
+              "gap-4",
+              "overflow-hidden",
+              "h-full",
+              "items-center",
+            ].join(" ")}
+          >
+            <div className={["w-8"].join(" ")}>
               {icon && <Icon {...icon} size="lg" />}
-              <div>
-                {title && (
-                  <div className={["font-bold"].join(" ")}>{title}</div>
-                )}
-                {subtitle && <div>{subtitle}</div>}
-              </div>
             </div>
-          </a>
+            <div>
+              {title && <div className={["font-bold"].join(" ")}>{title}</div>}
+            </div>
+          </div>
         ))}
       </div>
     </section>
   );
 };
 
-export default Hyperlinks;
+export default List;

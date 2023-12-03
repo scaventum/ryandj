@@ -3,6 +3,7 @@ import SECTION_TYPES from "@constants/sections";
 
 import CategorisedItems from "@sections/categorisedItems";
 import Hero from "@sections/hero";
+import List from "@sections/list";
 import Hyperlinks from "@sections/hyperlinks";
 import Timeline from "@sections/timeline";
 
@@ -33,13 +34,13 @@ export default function Home() {
                 items={section.categorisedItems}
               />
             );
-          } else if (section.type === SECTION_TYPES.TIMELINE) {
+          } else if (section.type === SECTION_TYPES.LIST) {
             return (
-              <Timeline
+              <List
                 key={index}
                 icon={section.icon}
                 titling={section.titling}
-                items={section.timelineItems}
+                listItems={section.listItems}
               />
             );
           } else if (section.type === SECTION_TYPES.HYPERLINKS) {
@@ -50,6 +51,15 @@ export default function Home() {
                 titling={section.titling}
                 hyperlinks={section.hyperlinks}
                 size={section.size!}
+              />
+            );
+          } else if (section.type === SECTION_TYPES.TIMELINE) {
+            return (
+              <Timeline
+                key={index}
+                icon={section.icon}
+                titling={section.titling}
+                items={section.timelineItems}
               />
             );
           }

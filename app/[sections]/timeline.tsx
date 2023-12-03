@@ -40,7 +40,7 @@ const Timeline = ({ icon, titling, items }: TimelineProps) => {
       ].join(" ")}
     >
       <div className={["flex", "flex-col", "gap-4", "sm:gap-8"].join(" ")}>
-        <div className={["flex", "gap-2"].join(" ")}>
+        <div className={["flex", "gap-2", "items-center"].join(" ")}>
           {icon && <Icon {...icon} size="2xl" />}
           <div>
             {titling?.title && (
