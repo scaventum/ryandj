@@ -49,6 +49,7 @@ export default function Home() {
                 icon={section.icon}
                 titling={section.titling}
                 hyperlinks={section.hyperlinks}
+                size={section.size!}
               />
             );
           }

@@ -8,6 +8,7 @@ const russoOne = Russo_One({ subsets: ["latin"], weight: "400" });
 
 // proptypes
 export type HyperlinksProps = {
+  size?: string;
   icon?: IconProps;
   titling?: {
     title?: string;
@@ -15,13 +16,29 @@ export type HyperlinksProps = {
   };
   hyperlinks?: Array<{
     icon?: IconProps;
-    title: string;
+    title?: string;
+    subtitle?: string;
     link?: string;
   }>;
 };
 
 // component
-const Hyperlinks = ({ icon, titling, hyperlinks }: HyperlinksProps) => {
+const Hyperlinks = ({
+  size = "md",
+  icon,
+  titling,
+  hyperlinks,
+}: HyperlinksProps) => {
+  let gridCols = ["sm:grid-cols-2", "md:grid-cols-1", "lg:grid-cols-2"];
+  if (size === "sm") {
+    gridCols = [
+      "sm:grid-cols-3",
+      "md:grid-cols-1",
+      "lg:grid-cols-2",
+      "xl:grid-cols-3",
+    ];
+  }
+
   return (
     <section
       className={[
@@ -52,11 +69,31 @@ const Hyperlinks = ({ icon, titling, hyperlinks }: HyperlinksProps) => {
           )}
         </div>
       </div>
-      <div className={["flex", "flex-col", "gap-4", "sm:gap-8"].join(" ")}>
-        {hyperlinks?.map(({ icon, title, link }, index) => (
-          <div key={index} className={[""].join(" ")}>
-            {icon && <Icon {...icon} size="lg" />}
-          </div>
+      <div className={["grid", ...gridCols, "gap-4", "sm:gap-8"].join(" ")}>
+        {hyperlinks?.map(({ icon, title, subtitle, link }, index) => (
+          <a href={link} key={index} target="__blank">
+            <div
+              className={[
+                "bg-background",
+                "hover:bg-accent",
+                "hover:text-background",
+                "rounded",
+                "p-4",
+                "flex",
+                "gap-4",
+                "overflow-hidden",
+                "h-full",
+              ].join(" ")}
+            >
+              {icon && <Icon {...icon} size="lg" />}
+              <div>
+                {title && (
+                  <div className={["font-bold"].join(" ")}>{title}</div>
+                )}
+                {subtitle && <div>{subtitle}</div>}
+              </div>
+            </div>
+          </a>
         ))}
       </div>
     </section>

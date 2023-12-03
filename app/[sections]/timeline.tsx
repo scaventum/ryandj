@@ -70,13 +70,13 @@ const Timeline = ({ icon, titling, items }: TimelineProps) => {
             >
               <h5
                 className={[""].join(" ")}
-              >{`${period?.from?.toUpperCase()} - ${period?.to?.toUpperCase()}`}</h5>
+              >{`${period?.from} - ${period?.to}`}</h5>
               <h4 className={["font-bold", "text-accent"].join(" ")}>
                 {organisationName?.toUpperCase()}
               </h4>
               <h5
                 className={["font-bold"].join(" ")}
-              >{`${as?.toUpperCase()} - ${location?.toUpperCase()}`}</h5>
+              >{`${as} - ${location}`}</h5>
               <div
                 key={index}
                 className={["flex", "flex-col", "gap-1"].join(" ")}

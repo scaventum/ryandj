@@ -444,6 +444,7 @@ const data = {
     },
     {
       type: "hyperlinks",
+      size: "md",
       icon: {
         name: "certificate",
       },
@@ -455,9 +456,8 @@ const data = {
           icon: {
             name: "certificate",
           },
-          title:
-            "edX Verified Certificate for AI for Everyone: Master the Basics",
-          subtitle: "July 2023 by IBM",
+          title: "AI for Everyone: Master the Basics",
+          subtitle: "July 2023 by IBM - edX",
           link: "https://courses.edx.org/certificates/b65a31b3da03458da62b1097fba28cac",
         },
         {
@@ -465,7 +465,7 @@ const data = {
             name: "aws",
             style: "fab",
           },
-          title: "AWS Certified Solutions Architect - Associate",
+          title: "Solutions Architect - Associate",
           subtitle: "September 2020 by AWS",
           link: "https://www.credly.com/badges/674de27d-9341-4de4-9eee-f764b3f354f6",
         },
@@ -473,6 +473,7 @@ const data = {
     },
     {
       type: "hyperlinks",
+      size: "sm",
       icon: {
         name: "hashtag",
       },
