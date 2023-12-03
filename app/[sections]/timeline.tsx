@@ -81,7 +81,7 @@ const Timeline = ({ icon, titling, items }: TimelineProps) => {
                 key={index}
                 className={["flex", "flex-col", "gap-1"].join(" ")}
               >
-                <ul className={["list-disc", "ml-4"].join(" ")}>
+                <ul className={["list-[square]", "ml-4"].join(" ")}>
                   {jobDescription?.map((job, index) => {
                     return (
                       <li key={index} className={[].join(" ")}>
