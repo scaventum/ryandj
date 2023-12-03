@@ -503,7 +503,7 @@ const data = {
             style: "fab",
           },
           title: "WhatsApp",
-          link: "https://wa.me/622040995746",
+          link: "https://wa.me/642040995746",
         },
         {
           icon: {
